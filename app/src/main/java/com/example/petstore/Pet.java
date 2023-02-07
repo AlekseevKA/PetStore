@@ -3,7 +3,7 @@ package com.example.petstore;
 public class Pet {
     private long id;
     private String name;
-    private String photoUrls;
+  //  private String photoUrls;
     private String status;
 
 
@@ -23,13 +23,13 @@ public class Pet {
         this.name = name;
     }
 
-    public String getPhotoUrls() {
-        return photoUrls;
-    }
+ //   public String getPhotoUrls() {
+ //       return photoUrls;
+ //   }
 
-    public void setPhotoUrls(String photoUrls) {
-        this.photoUrls = photoUrls;
-    }
+ //   public void setPhotoUrls(String photoUrls) {
+ //       this.photoUrls = photoUrls;
+ //   }
 
     public String getStatus() {
         return status;

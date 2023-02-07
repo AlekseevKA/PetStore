@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/find_pet_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.143" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/pet_id_edit_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
@@ -31,10 +31,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/find_pet_button" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/pet_image_view"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:background="@drawable/icon"
@@ -42,11 +42,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/pet_id_edit_text"
         app:layout_constraintVertical_bias="0.438" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/pet_name_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -54,18 +54,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/pet_id_edit_text" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/pet_status_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Status"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintBottom_toTopOf="@+id/pet_image_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/pet_name_text_view"
         app:layout_constraintVertical_bias="0.082" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        app:layout_constraintEnd_toStartOf="@+id/pet_name_text_view"
+        app:layout_constraintTop_toTopOf="@+id/pet_name_text_view" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: "
+        app:layout_constraintBottom_toBottomOf="@+id/pet_status_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/pet_status_text_view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
